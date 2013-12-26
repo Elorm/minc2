@@ -1,7 +1,7 @@
 <!DOCTYPE html>		
 <html>
 <head>
-	<title>Message Center</title>
+	<title>Message Compose</title>
 	<meta charset="utf-8">
     <meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Oxygen'>
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Fondamento'> -->
     <link rel="stylesheet" href="../assets/css/bs.min.css">
-	<link rel="stylesheet" href="../assets/bt-3css/msg-center.css">
+	<link rel="stylesheet" href="../assets/bt-3css/msg-compose.css">
 	<link rel="stylesheet" href="../assets/bt-3css/master-style.css">
 </head>
 <body>
@@ -39,118 +39,148 @@
 		</div>
 	</div>
 <!-- ==================================main body here ================================================== -->
-	<div class="container main-body-container">	
-		<div class="row">
-			<div class="side-nav well-sm col-sm-2">
-				<h4 >Messages</h4>
-				<!-- <h3><span class="label label-default">New</span></h3> -->
-				<hr>
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="/inbox"><h4>Inbox</h4></a></li>
-					<li><a href="/sent"><h4>Sent</h4></a></li>
-				</ul>
+	<div class="row msg-compose-main">
+		<div class="col-md-3 left">
+
+			<!-- <div class="recipient-email">
+				<div class="mentor-pic">
+					<img class="mentor-pic" src="../assets/img/andrew_gottlieb.jpg" alt="mentor pic">
+				</div>
+				<input class="form-control" id="disabledInput" type="text" placeholder="example@hostdomain.com" disabled>
+			</div> -->
+			<div class="tips row">
+				
 			</div>
-			<!-- <div class="col-md-10 mail-box"> -->
-				<div class="col-md-3 inbox">
-					<h3>Inbox</h3>
-					<hr>
-					<div class="mail-item">
-						<div class="mail-meta check"><input type="checkbox"></div>
-						<div class="mail-meta name">John Maxwell Doe</div>
-						<div class="mail-meta date">11.11.13</div>
-					</div>
-					<div class="mail-item">
-						<div class="mail-meta check"><input type="checkbox"></div>
-						<div class="mail-meta name">John Maxwell Doe</div>
-						<div class="mail-meta date">11.11.13</div>
-					</div>
-					<div class="mail-item">
-						<div class="mail-meta check"><input type="checkbox"></div>
-						<div class="mail-meta name">John Maxwell Doe</div>
-						<div class="mail-meta date">11.11.13</div>
-					</div>
-					<div class="mail-item">
-						<div class="mail-meta check"><input type="checkbox"></div>
-						<div class="mail-meta name">John Maxwell Doe</div>
-						<div class="mail-meta date">11.11.13</div>
-					</div>
-					<div class="mail-item">
-						<div class="mail-meta check"><input type="checkbox"></div>
-						<div class="mail-meta name">John Maxwell Doe</div>
-						<div class="mail-meta date">11.11.13</div>
-					</div>
-					<div class="mail-item">
-						<div class="mail-meta check"><input type="checkbox"></div>
-						<div class="mail-meta name">John Maxwell Doe</div>
-						<div class="mail-meta date">11.11.13</div>
-					</div>
-					<div class="mail-item">
-						<div class="mail-meta check"><input type="checkbox"></div>
-						<div class="mail-meta name">John Maxwell Doe</div>
-						<div class="mail-meta date">11.11.13</div>
-					</div>
-					<div class="mail-item">
-						<div class="mail-meta check"><input type="checkbox"></div>
-						<div class="mail-meta name">John Maxwell Doe</div>
-						<div class="mail-meta date">11.11.13</div>
-					</div>
-					<div class="mail-item">
-						<div class="mail-meta check"><input type="checkbox"></div>
-						<div class="mail-meta name">John Maxwell Doe</div>
-						<div class="mail-meta date">11.11.13</div>
-					</div>
+			<div class="checklist">
+				<div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+				</div>
+				<div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+				</div>
+				<div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+				</div>
+				<div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+				</div>
+				<div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+				</div>
+			</div>
+=========================================modal===========================================
+			<!-- Ontro mail sample -->
+			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			  View sample
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h4 class="modal-title" id="myModalLabel">Introductory email sample</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>Hi Jack,
+
+					<p>I would like to introduce myself, Kwame I am one of the co-founders and the CTO for Jhello. </p>
+
+					<p>Jhello is an e-commerce marketing software that helps online merchants promote their products 
+
+					and drive traffic through leading comparison shopping engines. </p>
+
+					<p>We're growing rapidly in data volumes and also in merchant base. It has become necessary we 
+
+					take a look at our system architecture, UI and UX to cater for future expansion.
+
+					Your expertise and advice would be greatly needed as we embark on a roadmap to expansion.</p> 
+
+					<p>Can we please schedule an initial skype meeting with you to introduce the Jhello team? Will 
+
+					somewhere next week be an appropriate fit?</p>
+
+					<p>Regards,</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<!-- Button trigger modal -->
+			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+			  View sample
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h4 class="modal-title" id="myModalLabel">Introductory email sample</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>Hi Jack, Teresa:</p>
+
+					<p>I wanted to reach out to everyone regarding our meeting on Thursday, September 19th. Kindly confirm if you’re both ok with vidchatting at 15:00-16:00 GMT.</p>
+
+					<ol>
+					 	<li>Here’s the login info for a demo of the app: 
+							<ul>
+								<li>login url: (login url)</li>
+								<li>username: (demo userid)</li>
+								<li>password: (pwd)</li>
+							</ul>
+						<li>Here’s an agenda outlining the areas we’d like to discuss: [Short, five-point agenda]</li>
 					
-					<div class="pages">
-						<ul class="pagination">
-						  <li><a href="#">&laquo;</a></li>
-						  <li><a href="#">1</a></li>
-						  <li><a href="#">2</a></li>
-						  <li><a href="#">3</a></li>
-						  <li><a href="#">4</a></li>
-						  <li><a href="#">5</a></li>
-						  <li><a href="#">&raquo;</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-7">
-					<div class="row">
-						<div class="btn-group mail-actions">
-						  <button type="button" class="btn btn-default">Mark as read</button>
-						  <button type="button" class="btn btn-default">Mark as unread</button>
-						  <button type="button" class="btn btn-default">Delete</button>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 msg-display">
-							<div class="col-md-12">
-								<div class="row mail-subject">
-									<h3>Subject: I want to read a book today </h3>
-								</div>
-								<div class="row sender-n-date">
-									<div class="col-md-6 pull-left"><strong><h4>Nic Nutsukpui</h4></strong></div>
-									<div clas="col-md-6 pull-right"><h5>Mon. 18.11.13 (3 days ago)</h5></div>
-								</div>
-								<div class="row mail-body">
-									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, est, iusto, eos, assumenda omnis maxime esse neque fugiat magni dignissimos odio dolorum dolorem nobis. Error, ab, dolore dolorum laboriosam consectetur repudiandae consequuntur! Laboriosam, nam, nobis, facere et repudiandae nisi deleniti tenetur explicabo optio iste fuga maxime laudantium at dolore nemo error harum alias quas maiores voluptas dolor tempora asperiores est aliquam sit quae dolores impedit. Quia, illo, dolore consequatur temporibus maxime eveniet voluptatibus nesciunt magni nostrum aliquam excepturi eum deleniti! Magnam, reiciendis, laboriosam illum laudantium odio corporis rem eligendi eum vitae molestiae velit voluptatibus inventore distinctio fuga hic quas quaerat dolore sunt reprehenderit quis qui veritatis aliquam doloremque ad animi ratione voluptates autem error nesciunt! Exercitationem, eligendi, perspiciatis, temporibus eius consequuntur assumenda cum quasi porro minima quo ipsam et mollitia. Nesciunt, saepe, veniam, expedita repellat veritatis obcaecati ipsum quam ut ducimus doloribus minus vel accusamus molestiae natus eaque tenetur officiis ea enim a quo omnis accusantium rem consequuntur? Exercitationem, provident maxime porro deleniti necessitatibus nostrum ratione soluta. Maiores, voluptates, eum, perspiciatis reprehenderit modi nemo possimus veritatis ipsa odit quae aliquid cupiditate assumenda soluta asperiores expedita numquam quos quisquam nobis sit molestiae fugit debitis doloremque enim itaque voluptatem et voluptas ipsam tenetur earum veniam magnam officia optio similique beatae distinctio alias velit autem amet obcaecati doloribus repudiandae quaerat commodi facilis incidunt accusantium sunt. Hic, minima, magni totam recusandae rerum aspernatur perspiciatis cumque rem vero magnam quos dignissimos sequi consequuntur quas facilis ipsam expedita? Totam, consequuntur, culpa ex nesciunt adipisci omnis voluptatem saepe quis dolorum id repellat maiores mollitia incidunt architecto aliquam similique expedita voluptatum tempore nulla molestiae qui labore minus! Similique, quisquam, magnam accusamus reiciendis illum dicta officiis molestias aperiam exercitationem consequatur a odio non ea cumque alias eum asperiores sint vitae nemo neque. Minus, quis, velit fugit numquam officia iusto.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="btn-group mail-actions pull-right">
-						  <button type="button" class="btn btn-default">Reply</button>
-						  <button type="button" class="btn btn-default">Delete</button>
-						</div>
-					</div>
-				</div>
-			<!-- </div>	 -->
+						<li>Finally, kindly let me know if you’re OK vidchatting via Skype, or if there’s another service you’d prefer. If Skype works for you, please let me know your Skype IDs. Mine is [<em> insert Skype ID</em>]. </li>
+					 
+					 </ol>
+
+					<p>Cheers,</p>
+					<p>Kwesi</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			========================================================================
 		</div>
-	</div>	
+		<div class="col-md-8 right">
+			<input class="form-control" type="text" placeholder="Subject" >
+			<input class="form-control" type="text" placeholder="To: {Nicodemous Nutsukpui}" disabled>
+			<hr>
+			<textarea id="message" class="form-control" col="60"row="500" placeholder="Type away your message..."></textarea>
+			<div class="btn-group pull-right message-actions">
+			  <button type="button" class="btn btn-default">Send</button>
+			  <button type="button" class="btn btn-default">Cancel</button>
+			</div>
+		</div>
+	</div>
+	
 	<!-- =============footer ================== -->
 	<div class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container">
 			<p class="navbar-text pull-left">Footer here</p>
-			<div class="navbar-btn btn-danger btn pull-right">Sing up if you have to</div>
+			<!-- <div class="navbar-btn btn-danger btn pull-right">Sing up if you have to</div> -->
 		</div>
 	</div>
 

@@ -1,6 +1,7 @@
 body{
-	background-color: #F3F3F3;
-	
+	background-color: #fff;
+	/*background-color: #F3F3F3;*/
+	overflow-x: hidden; 
 }
 
 li:hover{
