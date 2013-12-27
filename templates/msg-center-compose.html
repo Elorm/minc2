@@ -40,139 +40,464 @@
 	</div>
 <!-- ==================================main body here ================================================== -->
 	<div class="row msg-compose-main">
-		<div class="col-md-3 left">
+		<div class="col-md-3 left-side">
 
-			<!-- <div class="recipient-email">
-				<div class="mentor-pic">
-					<img class="mentor-pic" src="../assets/img/andrew_gottlieb.jpg" alt="mentor pic">
-				</div>
-				<input class="form-control" id="disabledInput" type="text" placeholder="example@hostdomain.com" disabled>
-			</div> -->
-			<div class="tips row">
-				
+			<div class="email-type" >
+				<select name="type-of-email" id="email-type" required> Type of email
+					<option value="introduction">Introduction</option>
+					<option value="arrange-a-meeting">Arrange a meeting</option>
+					<option value="48hours-prior">48 hours prior</option>
+					<option value="within-48hours"> Within 48 hours</option>
+					<option value="follow-up">Follow-up</option>
+				</select>
 			</div>
-			<div class="checklist">
-				<div class="checkbox">
-				    <label>
-				      <input type="checkbox"> Check me out
-				    </label>
+			
+
+<!-- ========================================= modal =========================================== -->
+			<!-- Intro mail sample -->
+			<div class="hideShow" id="introduction">
+				<div class="checklist">
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> The issue your company is facing.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> How his/her experience is relevant to helping you.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Ask if they are willing to help.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Set your expectations upfront.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Check for spelling.
+					    </label>
+					</div><div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Keep it short and crisp.
+					    </label>
+					</div>
 				</div>
-				<div class="checkbox">
-				    <label>
-				      <input type="checkbox"> Check me out
-				    </label>
-				</div>
-				<div class="checkbox">
-				    <label>
-				      <input type="checkbox"> Check me out
-				    </label>
-				</div>
-				<div class="checkbox">
-				    <label>
-				      <input type="checkbox"> Check me out
-				    </label>
-				</div>
-				<div class="checkbox">
-				    <label>
-				      <input type="checkbox"> Check me out
-				    </label>
-				</div>
+				<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				  VIEW SAMPLE
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel">Introductory email sample</h4>
+				      </div>
+				      <div class="modal-body">
+				        <p>Hi Jack,
+
+						<p>I’m Kwame, co-founder and CTO of Jhello, an incubator company at the Meltwater Entrepreneurial School of Technology. I’m writing to ask your advice on how to scale our technical infrastructure. </p>
+
+						<p>Jhello is a private social network for members of the African diaspora. We’re growing very rapidly, and we’re having trouble scaling our infrastructure. Considering your experience scaling infrastructure for multiple companies, I’d love to get your perspective on how to do this most effectively. </p>
+
+						<p>Would it be possible to Skype for an hour sometime next week to discuss strategies that might help us deal with this?</p> 
+
+						<p>Regards,</p>
+						<p>Kwame</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
-=========================================modal===========================================
-			<!-- Ontro mail sample -->
-			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-			  View sample
-			</button>
 
-			<!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			        <h4 class="modal-title" id="myModalLabel">Introductory email sample</h4>
-			      </div>
-			      <div class="modal-body">
-			        <p>Hi Jack,
+			<!-- Arranging a Meeting sample -->
+			<div class="hideShow" id="arrange-a-meeting">
+				<div class="checklist">
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Decide on a mutually agreeable time (Use International meeting planner).
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Send a calendar Invite with an  agenda.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Share contact details (Skype, Google Hangouts etc).
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Set up demo account and include log-in details if applicable.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Send screenshots/documentation if applicable.
+					    </label>
+					</div><div class="checkbox">
+					    <label>
+					      <input type="checkbox">  Use Fuze for screen sharing.
+					    </label>
+					</div><div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Check for Spelling.
+					    </label>
+					</div><div class="checkbox">
+					    <label>
+					      <input type="checkbox">  Keep it short and crisp.
+					    </label>
+					</div>
+				</div>
+				<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+				  VIEW SAMPLE
+				</button>
 
-					<p>I would like to introduce myself, Kwame I am one of the co-founders and the CTO for Jhello. </p>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel2">Arrangingf a meeting email sample</h4>
+				      </div>
+				      <div class="modal-body">
+				        <p>Hi Jack, Teresa:</p>
 
-					<p>Jhello is an e-commerce marketing software that helps online merchants promote their products 
+						<p>I wanted to reach out to everyone regarding our meeting on Thursday, September 19th. Kindly confirm if you’re both ok with vidchatting at 15:00-16:00 GMT.</p>
 
-					and drive traffic through leading comparison shopping engines. </p>
+						<ol>
+						 	<li>Here’s the login info for a demo of the app: 
+								<ul>
+									<li>login url: (login url)</li>
+									<li>username: (demo userid)</li>
+									<li>password: (pwd)</li>
+								</ul>
+							<li>Here’s an agenda outlining the areas we’d like to discuss: [Short, five-point agenda]
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul></li>
+						
+							<li>Finally, kindly let me know if you’re OK vidchatting via Skype, or if there’s another service you’d prefer. If Skype works for you, please let me know your Skype IDs. Mine is [insert Skype ID].</li>
+						 
+						 </ol>
+						
+						<p>Looking forward to the conversation!</p>
 
-					<p>We're growing rapidly in data volumes and also in merchant base. It has become necessary we 
+						<p>Cheers,</p>
+						<p>Kwesi</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</div>
 
-					take a look at our system architecture, UI and UX to cater for future expansion.
-
-					Your expertise and advice would be greatly needed as we embark on a roadmap to expansion.</p> 
-
-					<p>Can we please schedule an initial skype meeting with you to introduce the Jhello team? Will 
-
-					somewhere next week be an appropriate fit?</p>
-
-					<p>Regards,</p>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-			      </div>
-			    </div><!-- /.modal-content -->
-			  </div><!-- /.modal-dialog -->
-			</div><!-- /.modal -->
-
-			<!-- Button trigger modal -->
-			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
-			  View sample
-			</button>
-
-			<!-- Modal -->
-			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			        <h4 class="modal-title" id="myModalLabel">Introductory email sample</h4>
-			      </div>
-			      <div class="modal-body">
-			        <p>Hi Jack, Teresa:</p>
-
-					<p>I wanted to reach out to everyone regarding our meeting on Thursday, September 19th. Kindly confirm if you’re both ok with vidchatting at 15:00-16:00 GMT.</p>
-
-					<ol>
-					 	<li>Here’s the login info for a demo of the app: 
-							<ul>
-								<li>login url: (login url)</li>
-								<li>username: (demo userid)</li>
-								<li>password: (pwd)</li>
-							</ul>
-						<li>Here’s an agenda outlining the areas we’d like to discuss: [Short, five-point agenda]</li>
+			<!-- 48hours Prior mail sample -->
+			<div class="hideShow" id="48hours-prior">
+				<div class="checklist">
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Send an email reminder about the meeting.
+					    </label>
+					</div><div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Check for spelling.
+					    </label>
+					</div>
 					
-						<li>Finally, kindly let me know if you’re OK vidchatting via Skype, or if there’s another service you’d prefer. If Skype works for you, please let me know your Skype IDs. Mine is [<em> insert Skype ID</em>]. </li>
-					 
-					 </ol>
+				</div>
+				<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+				  VIEW SAMPLE
+				</button>
 
-					<p>Cheers,</p>
-					<p>Kwesi</p>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-			      </div>
-			    </div><!-- /.modal-content -->
-			  </div><!-- /.modal-dialog -->
-			</div><!-- /.modal -->
-			========================================================================
-		</div>
-		<div class="col-md-8 right">
-			<input class="form-control" type="text" placeholder="Subject" >
-			<input class="form-control" type="text" placeholder="To: {Nicodemous Nutsukpui}" disabled>
-			<hr>
-			<textarea id="message" class="form-control" col="60"row="500" placeholder="Type away your message..."></textarea>
-			<div class="btn-group pull-right message-actions">
-			  <button type="button" class="btn btn-default">Send</button>
-			  <button type="button" class="btn btn-default">Cancel</button>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel3">48 hours prior to meeting email sample</h4>
+				      </div>
+				      <div class="modal-body">
+
+				        <p>Hi Jack,</p>
+
+				        <p>Hope you’re doing well. This is a reminder for our meeting in two days, on September 19th, at 17.00 GMT.</p>
+
+				        <p>1) Here’s the login info for the app demo:</p>
+						<ul>
+					        <li>login url: (login url)</li>
+					        <li>username:(demo userid)</li>
+					        <li>password:(pwd)</li>
+						</ul>
+
+				        <p> 2) Here’s an agenda outlining the areas we’d like to discuss: [Short, five-point agenda]</p>
+
+				        <p>Many thanks, and talk to you soon!</p>
+
+				        <p>Regards,</p>
+				        <p>Kwame</p>
+
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 			</div>
+
+			<!-- Within 48 hours mail sample -->     
+			<div class="hideShow" id="within-48hours">
+				<div class="checklist">
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Thank them for their time and insight.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Detail action items with deadlines and who is responsible for them.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Define what the next steps will be.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Ask for feedback about overall interaction.
+					    </label>
+					</div>
+					
+				</div>
+				<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
+				  VIEW SAMPLE
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel4">Within 48 hours after meeting email sample</h4>
+				      </div>
+				      <div class="modal-body">
+
+				        <p>Hi all,</p>
+
+				        <p>Once again, on behalf of the entire Jhello team, I’d like to thank you for making the time to support us. Your insight so far has been invaluable.</p>
+
+				        <p> Here is a summary of action items.</p>
+						<ol>
+					        <li>Kwame: change all selections to checkboxes</li>
+					        <li>Kwame: start work on the message center tonight and admin panel next week. [Kwame]</li>
+					        <li>Jack: make email introduction to the person who scaled Facebook’s technical infrastructure</li>
+						</ol>
+
+				        <p>We tentatively set a date for a follow-up meeting on October 19th at 17:00 GMT. I’ll send out calendar invites momentarily. </p>
+
+				        <p>Kindly let me know if I omitted anything in this summary, and I look forward to speaking again in a few weeks!</p>
+
+				        <p>Regards,</p>
+				        <p>Kwame</p>
+
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</div>
+
+
+			<!-- Follow-up mail sample -->
+			<div class="hideShow" id="follow-up">
+				<div class="checklist">
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Send summary of what you have been upto since the last meeting.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Describe whatever challenges you faced executing his/her recommendations.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> What would you like to achieve in the next meeting.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Send screenshots/Documentation if applicable.
+					    </label>
+					</div>
+					<div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Check for spelling.
+					    </label>
+					</div><div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Keep it short and crisp.
+					    </label>
+					</div>
+				</div>
+				<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal5">
+				  VIEW SAMPLE
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel5">Follow-up email sample</h4>
+				      </div>
+				      <div class="modal-body">
+
+				        <p>Hi Beth,</p>
+
+				        <p>Hope you’re doing well. Thanks once again for the session you had with the team last week. It was extremely helpful. We’ve started implementing most of the things we discussed: </p>
+
+				        <p> With regards to our next meeting, I’d like us to delve more deeply into design:</p>
+						<ul>
+							<li>We changed the color palette, typography, and the general user flow of the test site to encourage the creation of multiple widgets. Do you think the changes support this objective? </li>
+							<li>How can we get access to high quality images for our landing page. In your estimation, which is the best stock photography site?</li>
+							<li>What does your daily schedule look like as a designer at Apple?</li>
+							<li>What tools and resources do you use in doing your daily tasks?</li>
+							<li>How do you derive inspiration as a designer?</li>
+						</ul>
+						
+				        <p>Looking forward to our next meeting.</p>
+
+				        <p>Regards,</p>
+				        <p>Kwame</p>
+
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</div>
+
+			<div class="tips row">
+				  <h3><strong>Some useful tips</strong></h3>
+				<div id="carousel-tips" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <!-- <ol class="carousel-indicators">
+				    <li data-target="#carousel-tips" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-tips" data-slide-to="1"></li>
+				    <li data-target="#carousel-tips" data-slide-to="2"></li>
+				    <li data-target="#carousel-tips" data-slide-to="3"></li>
+				    <li data-target="#carousel-tips" data-slide-to="4"></li>
+				    <li data-target="#carousel-tips" data-slide-to="5"></li>
+				    <li data-target="#carousel-tips" data-slide-to="6"></li>
+				    <li data-target="#carousel-tips" data-slide-to="7"></li>
+				    <li data-target="#carousel-tips" data-slide-to="8"></li>
+				    <li data-target="#carousel-tips" data-slide-to="9"></li>
+				    <li data-target="#carousel-tips" data-slide-to="10"></li>
+				    <li data-target="#carousel-tips" data-slide-to="11"></li>
+				    <li data-target="#carousel-tips" data-slide-to="12"></li>
+				    <li data-target="#carousel-tips" data-slide-to="13"></li>
+				    <li data-target="#carousel-tips" data-slide-to="14"></li>
+				    <li data-target="#carousel-tips" data-slide-to="15"></li>
+				    <li data-target="#carousel-tips" data-slide-to="16"></li>
+				  </ol> -->
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+				      <p>Always fill in the subject line with a topic that means something to your reader. Not "Deadline" or "Important!" but "Revised deadline for product update."</p>
+				    </div> 
+				    <div class="item ">
+				      <p>Put your main point in the opening sentence. Most readers won't stick around for a surprise ending.</p>
+				    </div><div class="item ">
+				      <p>Never begin a message with a vague "This." As in, "This needs to be done by 5:00." Always specify what you're writing about.</p>
+				    </div><div class="item ">
+				      <p>Don't use ALL CAPITALS - no shouting! Also, don’t use all lower-case letters.</p>
+				    </div><div class="item ">
+				      <p>As a general rule, PLZ avoid textspeak (abbreviations and acronyms): you may be ROFLOL (rolling on the floor laughing out loud), but your reader may be left wondering WUWT (what's up with that).</p>
+				    </div><div class="item ">
+				      <p>Be brief and polite.</p>
+				    </div><div class="item ">
+				      <p>If your message runs longer than two or three short paragraphs, consider (a) reducing the message, or (b) providing an attachment.</p>
+				    </div><div class="item ">
+				      <p>Remember to say "Please" and "Thank you."</p>
+				    </div><div class="item ">
+				      <p>Add a signature block with appropriate contact information (in most cases, your name, business address, and phone number, along with a legal disclaimer if required by your company).</p>
+				    </div><div class="item ">
+				      <p>Important: edit and proofread before hitting "send." You may think you're too busy to sweat the small stuff, but your reader will think you're careless.</p>
+				    </div><div class="item ">
+				      <p>Reply promptly to serious messages. If you need more than 24 hours to collect information or make a decision, send a brief response explaining the delay.</p>
+				    </div><div class="item ">
+				      <p>Start with a salutation. e.g. Dear Mr. Jones, or Dear Professor Smith for someone you don’t know well, especially if they’re a superior, and Dear Joe, or Dear Mandy if you have a working relationship with the person.</p>
+				    </div><div class="item ">
+				      <p>Stick to one topic for each email.</p>
+				    </div><div class="item ">
+				      <p>Avoid excessive compliments.</p>
+				    </div><div class="item ">
+				      <p>Use simple English.</p>
+				    </div><div class="item ">
+				      <p>Always, always proofread email before sending!</p>
+				    </div><div class="item ">
+				      <p> Link to referenced documents or resources whenever possible. Don’t simply say “Kindly refer to the marketing plan document.” Instead, provide a link to said document (or include it as an attachment). Make things as easy as possible for your reader.</p>
+				    </div>
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-tips" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-tips" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+				</div>
+			</div>	
+		</div>				
+
+	
+			<!-- ======================================================================== -->
+		<div class="col-md-8 right">
+				
+				<input class="form-control" type="text" placeholder="Subject" >
+				<input class="form-control" type="text" placeholder="To: {Nicodemous Nutsukpui}" disabled>
+				<hr>
+				<textarea id="message" class="form-control" col="60"row="600" placeholder="Type away your message..."></textarea>
+				<div class="btn-group pull-right message-actions">
+				  <button type="button" class="btn btn-default">Send</button>
+				  <button type="button" class="btn btn-default">Cancel</button>
+				</div>
 		</div>
 	</div>
 	
@@ -187,5 +512,22 @@
 	<!-- ================= Scripts ================== -->
 	<script src="../assets/js/jquery-2.0.3.min.js"></script>
     <script src="../assets/js/bs.min.js"></script>
+    <script src="../assets/js/bs.min.js"></script>
+    <script >
+    	$('.carousel').carousel({
+    	  interval: 8000
+    	})
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$(".hideShow").hide();
+    		$("#introduction").show();
+    		$("#email-type").on("change",function(){
+    			// alert(this.value);
+    			$(".hideShow").hide();
+    			$("#"+this.value).show();
+    		})
+    	});
+    </script>
 </body>
 </html>
