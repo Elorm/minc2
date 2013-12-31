@@ -15,11 +15,10 @@ li {
 	min-height: 1000px;
 	background-color: #D8D4CB;
 }
-<<<<<<< HEAD
 .nav >li:hover{
-	/*background-color: #4E2C46;*/
+	background-color: #4E2C46;
 }
-/*.sidebar div > ul {
+.sidebar div > ul {
 	list-style: none;
 	padding-left: 0;
 }
@@ -37,34 +36,6 @@ li {
 .sidebar li:active{
 	background-color: #3498DB;
 	color: #fff;
-}*/
-.nav >li{
-	/*height: 15px;*/
-}
-.nav>li>a{
-	/*height: 200px;*/
-	color: #000;
-}
-.nav>li>a:hover{
-	background-color: #333;
-	color: #fff;
-	
-}
-=======
-.navbar{
-	border-bottom: 0px;
-}
-.nav>li>a{
-	color: #000;
-}
-
-.nav>li>a:hover{
-	background-color: #333;
-	color: #fff;	
-}
-
->>>>>>> front-end
-.side-nav >li:hover, .side-nav >li a:hover {
 }
 
 .mail-box{
@@ -77,35 +48,29 @@ li {
 	border-left: 2px solid #D8D8D8;
 	background-color: #FEFEFE;
 	min-height: 1000px;
-<<<<<<< HEAD
 	/*overflow-x: hidden;
 	overflow-y: scroll;*/
-=======
->>>>>>> front-end
 }
 
 .inbox li>span {
 	margin:0 3px;
 }
-<<<<<<< HEAD
 /*div.inline { float:left; }
 .clearBoth { clear:both; }*/
-=======
->>>>>>> front-end
 
 .mail-item{
-	width: 260px;
+	width: 235px;
 	height: 39px;
 	float: left;
 	margin-bottom: 5px;
 	vertical-align: middle;
-	padding: 7px;
+	padding-top: 7px;
 	border-bottom: 1px solid #D8D8D8;
 }
 
 .mail-item:hover{
-	background-color: #333;
-	color: #fff;
+	background-color: #D8D8D8;
+	color: #1C1C1C;
 	font-weight: bolder;
 }
 
@@ -131,30 +96,14 @@ li {
 	width: 35px;
 }
 
-<<<<<<< HEAD
 .btn-group.mail-actions{
 	margin: 10px 0 0 10px;
-=======
-.btn-default{
-	width: 96px;
-	font-size: 11px;
 }
 
-.btn-group.mail-actions{
-	margin-bottom:15px;
->>>>>>> front-end
-}
-.btn-group:hover{
-	background-color: #333;
-	color: #fff;
-}
 .msg-display{
 	margin-top: 5px;
 	background-color: #FEFEFE;
-<<<<<<< HEAD
 
-=======
->>>>>>> front-end
 }
 
 .col-md-6 .pull-right{
@@ -167,11 +116,4 @@ li {
 
 .mail-body{
 	padding: 0 20px;
-<<<<<<< HEAD
-=======
-}
-
-.modal-header {
-	background-color:#D8D4CB
->>>>>>> front-end
 }

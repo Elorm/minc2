@@ -1,4 +1,17 @@
 body{
+<<<<<<< HEAD
 	background-color: #F3F3F3;
 	
+=======
+	background-color: #fff;
+	/*background-color: #F3F3F3;*/
+	overflow-x: hidden; 
+}
+
+li:hover{
+	background-color: #D8D8D8;
+}
+li:active{
+	background-color: #D8D8D8;
+>>>>>>> front-end
 }
