@@ -84,8 +84,13 @@ li {
 	width: 35px;
 }
 
+.btn-default{
+	width: 96px;
+	font-size: 11px;
+}
+
 .btn-group.mail-actions{
-	margin: 10px 0 0 10px;
+	margin-bottom:15px;
 }
 .btn-group:hover{
 	background-color: #333;
@@ -94,7 +99,6 @@ li {
 .msg-display{
 	margin-top: 5px;
 	background-color: #FEFEFE;
-
 }
 
 .col-md-6 .pull-right{
